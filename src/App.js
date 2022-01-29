@@ -44,7 +44,16 @@ import ComponentC from "./components/context/ComponentC";
 import { UserProvider } from "./components/context/userContext";
 import PostList from "./components/HTTP/PostList";
 import PostForm from "./components/HTTP/PostForm";
-
+import QRPageUsingQrious from "./components/QRPage/QRPageUsingQrious";
+import ReactQRCodeLog from "./components/QRPage/ReactQRCodeLogo";
+const QRExample = () => {
+  return (
+    <div>
+      {/* <QRPageUsingQrious /> */}
+      <ReactQRCodeLog />
+    </div>
+  );
+};
 const HTTP = () => {
   return (
     <div>
@@ -286,7 +295,7 @@ function App() {
   );
 }
 
-export default App;
+export default QRExample;
 
 export {
   App,
@@ -312,6 +321,7 @@ export {
   RenderProps,
   ContextComponent,
   HTTP,
+  QRExample,
 };
 
 /*  <header className="App-header">
